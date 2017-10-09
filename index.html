@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<title>Centro Obra </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Centro Obra Serralharia Caixilharia Estores Aluminio Soldado Ferro Inox Vidraria Portas Seccionadas Automatismos Carpintaria Pladur Pintura Papel de Parede Electricidade Pichelaria Limpezas Jardinagem Manutenção Casas Ferias Monção Norte Portugal Viana do Castelo" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="author" content="André Martinez">
+<!-- Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style2.css" type="text/css" rel="stylesheet" media="all">   
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" property="" /> 
+<link href="css/font-awesome.css" rel="stylesheet"> <!-- font-awesome icons -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css">
+<link rel="icon" href="images/icon.png" /><!-- ICON -->
+<!-- //Custom Theme files -->  
+<!-- web-fonts --> 
+ <link href='//fonts.googleapis.com/css?family=Redressed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet'>
+<!-- //web-fonts -->
+<style type="text/css">
+	.font20Imp{
+		font-size: 26px !important;
+	}
+	/* Efeito hover nas imagens serviços */
+	.img__wrap {
+	  position: relative;
+	}
+
+	.img__description_layer {
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background: rgba(0, 0, 0, 0.6);
+	  color: white;
+	  visibility: hidden;
+	  opacity: 0;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+
+	  transition: opacity .2s, visibility .2s;
+	}
+
+	.img__wrap:hover .img__description_layer {
+	  visibility: visible;
+	  opacity: 1;
+	}
+
+	.img__description {
+	  transition: .2s;
+	  transform: translateY(1em);
+	  color: white;
+	  font-size: 16px;
+	  padding: 5px;
+	  margin-left: auto !important;
+	  margin-right: auto !important;
+	  border-top: solid 2px white;
+	  border-bottom: solid 2px white;
+	}
+
+	.img__wrap:hover .img__description {
+	  transform: translateY(0);
+	}
+
+	/* FEEDBACK */
+	.test-grid p{
+		font-size: 1em;
+	    line-height: 1.9em;
+	    color: #908f8f;
+	    letter-spacing: 1px;
+		text-align: left;
+		margin-top: 1em;
+	}
+
+	.test-grid h4 {
+	    font-size: 1.4em;
+	    color: #000;
+	    font-weight: 600;
+	    margin-top: 1em;
+	    text-align: left;
+	}
+	.test-grid span {
+	    font-size: 0.9em;
+	    color: #999;
+	    font-style: italic;
+	    text-align: left;
+	    display: block;
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	.agile {
+	    margin-bottom: 4em;
+	}
+	.test-grid1 {
+	    background: #F5F5F5;
+		position:relative;
+		padding: 2em;
+	}
+
+	#rowFeedback{
+		background: url('images/moncao4.jpg') center no-repeat;
+		background-size: 100%;
+		padding-top: 150px;
+		padding-bottom: 100px;
+
+	}
+	.test-grid1{
+		height: 250px;
+	}
+</style>
+</head>
+<body> 
+	<div id="nav-overlay" class="nav-w3right">
+		<span class="menu-trigger trigger" rel="nav-overlay" style="font-size: 20px; float: right" onclick="toggleMenuButton('menu-trigger')">MENU</span>
+		<div >
+			<nav class="w3ls-nav">
+				<ul>
+					<li><a href="http://www.centroobra.com" class="active">Inicio</a></li>
+					<li><a href="#about" onclick="closeMenu()">Sobre</a></li>
+					<li><a href="#services" onclick="closeMenu()">Serviços</a></li>
+					<li><a href="#contact" onclick="closeMenu()">Contacto</a></li> 
+				</ul>
+			</nav>
+		</div>
+	</div>   
+	<!-- banner -->
+	<!-------------------------------------------------- banner --------------------------------------------------------- -->
+	<div class="banner" >
+		<div class="banner-layer">
+			<!-- header -->
+			<!--<div class="header-agileits"> 
+				<div class="w3ls-logo">
+					<a href="index.html"><img id="logoCentro" src="images/logo.png" alt="logo"></a>
+				</div>  
+				<div class="clearfix"> </div>
+			</div> -->
+			<!-- //header -->
+			<!-- menu js-->
+			<script src="js/jquery-3.1.1.slim.min.js"></script> 
+			<script>
+				$(document).ready(function() {
+					$('.trigger').click(function() {
+					  var $this = $(this),
+					  notThis = $this.hasClass('open'),
+					  thisNav = $this.attr("rel");
+					  //close if you click another menu trigger
+					  if (!notThis) {
+						 $('.triggered-area, .trigger').removeClass('open');
+						 if ( $( '.trigger' ).hasClass( "block-scroll" ) ){
+							$('html').removeClass('disable-scroll');
+							$('#overlay-mobile').removeClass('visible');
+						 }
+					  }
+					  //open the nav
+					  $this.toggleClass('open');
+					  $("#"+thisNav).toggleClass('open');
+					  if ( $( this ).hasClass( "block-scroll" ) ){
+						 $('html').toggleClass('disable-scroll');
+						 $('#overlay-mobile').toggleClass('visible');
+					  }
+					});  
+				});
+			</script>
+			<!-- //menu js-->
+			<!-- banner-text -->
+			<div class="banner-text-info"> 
+				<div class="container">
+					<div class="flexslider">
+						<div class="banner-w3lstext">
+							<div class="logoDiv">
+								<a href="http://www.centroobra.com"><img id="logoCentro" src="images/logo.png" alt="logo"></a>
+							</div>
+							<!--<h6>Monção</h6>
+							<p>Simplifique a sua vida </p>-->
+						</div>
+					</div> 	 
+				</div>
+			</div>
+			<!-- //banner-text -->
+		</div>
+	</div>
+	<!-- //banner --> 
+	<!---------------------------------------------- Buttons Languages ------------------------------------------------ -->
+	<div id="lang" class="row" style="margin-top: 50px">
+		<div class="container" style="text-align: center;">
+			<button id="btnPt" type="button" class="btn btn-default active" onclick="window.location.href='../'">PT</button>
+			<button id="btnFr" type="button" class="btn btn-default" onclick="window.location.href='../fr'">FR</button>	
+		</div>
+	</div>
+
+	<!-------------------------------------------------- sobre --------------------------------------------------------- -->
+	<div id="about" class="about">
+		<div class="container">
+			<div class="agileits-title">
+				<h3>Sobre</h3> 
+			</div>
+			<div class="col-md-6">
+				<img src="images/montra.jpg" class="img-responsive" alt=""/>
+			</div>
+			<div class="col-md-6">
+
+				<p style="text-align: justify">O "Centro Obra" é uma empresa sediada em Monção, em pleno Norte de Portugal, tendo sido criada em Outubro de 2017. <br>
+				A nossa missão é simplificar o dia-a-dia das pessoas, reunindo todos os serviços ligados às obras/manutenções em casa em um único local.<br>
+				Quantas vezes precisamos de um picheleiro, electricista, ou de um jardineiro e não temos ideia de quem poderíamos contactar. O "Centro Obra" contacta, faz a marcação segundo a sua disponibilidade, resolve o problema e no fim quer ter um cliente satisfeito devido a um serviço rápido, eficaz e simples!<br>
+				É frequente pensarmos: "Quero colocar papel de parede no quarto do meu filho! E quem será que vende e/ou coloca?" ou "Gostaria de ter um jardim bonito mas não tenho tempo!".<br>
+				Isto são apenas alguns exemplos que surgem no nosso dia-a-dia e que o "Centro Obra" pode resolver por si!<br>
+				Por isso, venha conhecer a nossa empresa, os nossos serviços e "simplifique" a sua vida!</p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!------------------------------------------------- Feedback ------------------------------------------------------- -->
+<div id="rowFeedback" class="row">
+	<div class="test" id="clients">
+		<div class="container">
+			<div class="agileits-title">
+					<h3 id="tituloFeedback" style="color: white">Feedback Clientes</h3> 
+				</div>
+			<div class=" test-gr">
+				<div class=" test-gri1">
+					<div id="owl-demo2" class="owl-carousel">
+						<div class="agile">
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>“Parece-me uma ideia arrojada e bastante viável! É algo que não existe em Monção!”</p>
+									<h4>Filipe </h4>
+								</div>	
+							</div>	
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>“Eu precisei de um Picheleiro e não sabia quem poderia contactar, pois não conheço nenhum. Como sabia que a minha amiga estava prestes a abrir este negócio liguei com ela e tratou de tudo, não tive de me preocupar com nada!”</p>
+									<h4>Cátia</h4>
+									<span>Pereira</span>
+								</div>	
+							</div>	
+							<div class="clearfix"></div>
+						</div>
+						<div class="agile">
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>“É uma óptima ideia, não existe nada assim aqui em Monção!”</p>
+									<h4>Madalena</h4>
+									<span>Caldas</span>
+								</div>	
+							</div>	
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>“Por acaso, tenho obras para fazer em casa, que é uma divisão que tem humidade, se calhar precisa de tratamento, quero pôr pladur e depois pintá-la, mas a verdade é que vou adiando pois não tenho tempo para pesquisar e andar a ligar…Ainda bem que apareceu, pode dar muito jeito!”</p>
+									<h4>Armindo</h4>
+									<span>Lobato</span>
+								</div>	
+							</div>	
+							<div class="clearfix"></div>
+						</div>
+						<div class="agile">
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>“Eu vivo sozinho, mas como trabalho todo o dia não tenho tempo para cuidar do jardim e da casa, obras então nem falo…Chego ao fim-de-semana e só quero sair com os amigos e descansar. Para pessoas como eu, pode ser uma grande ajuda!”</p>
+									<h4>André</h4>
+									<span>Fernandes</span>
+								</div>	
+							</div>	
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>“É uma ideia interessante, penso que vais ter sucesso! Se souberes gerir as coisas e deixares os clientes satisfeitos, tens negócio de certeza! A ideia tem tudo para funcionar.”</p>
+									<h4>José</h4>
+									<span>Manuel</span>
+								</div>	
+							</div>	
+							<div class="clearfix"></div>
+						</div>
+						<div class="agile">
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>Pergunta Cliente: “Por acaso, tenho a porta da garagem avariada, abre até metade mas depois pára. Vocês também arranjam isso?” <br>
+									Resposta do Centro Obra: “Arranjamos sim, é só a Senhora dizer-me qual a melhor altura e eu faço a marcação para o mais breve possível.”</p>
+									<h4>Lurdes</h4>
+									<span>Pires</span>
+								</div>	
+							</div>	
+							<div class="col-md-6 test-grid">
+								<div class="test-grid1">
+									<p>Pergunta Cliente: “Já percebi que fazem pintura mas por acaso colocam papel de parede?”
+										<br>
+									Resposta Centro Obra: “Sim, colocamos! Venha à nossa loja, mostro-lhe várias possibilidades de cores e tipos de papel de parede, oriento-a e dou-lhe opiniões. Vai ver que vai gostar!”</p>
+									<h4>Carla</h4>
+									<span>Pereira</span>
+								</div>	
+							</div>	
+							<div class="clearfix"></div>
+						</div>			
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-------------------------------------------------- servicos ------------------------------------------------------- -->
+	<div id="services" class="services">
+			<div class="agileits-title">
+				<h3>Serviços</h3> 
+			</div>
+			<div class="services-agileinfo">
+				
+
+				<!-- ROW 2 ----------- -->
+				<div class="row" style="margin-bottom: 50px">
+					<!-- Secção descrição Serviços -->
+					<div class="menu-form">
+							<div class="menu-info"> 
+								<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+									<div class="container">
+									<ul id="myTab" class="nav nav-tabs" role="tablist">
+										<li role="presentation" class="active"><a class="buttonMenuForm" href="#one" id="one-tab" role="tab" data-toggle="tab" aria-controls="one" aria-expanded="true">Caixilharias</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#two" role="tab" id="two-tab" data-toggle="tab" aria-controls="two">Alumínio Soldado  |Ferro  |Inox |Automatismos |Portas Seccionadas |Estores</a></li>
+										<li role="presentation"><a class="buttonMenuForm"href="#tree" role="tab" id="tree-tab" data-toggle="tab" aria-controls="tree">Trabalhos em Vidro</a></li>
+										<br><br><br>
+										<li role="presentation"><a class="buttonMenuForm" href="#four" role="tab" id="four-tab" data-toggle="tab" aria-controls="four">Revestimentos</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#five" role="tab" id="five-tab" data-toggle="tab" aria-controls="five">Carpintaria</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#six" role="tab" id="six-tab" data-toggle="tab" aria-controls="six">Electricidade</a></li><br>
+										<li role="presentation"><a class="buttonMenuForm" href="#seven" role="tab" id="seven-tab" data-toggle="tab" aria-controls="seven">Pichelaria</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#eight" role="tab" id="eight-tab" data-toggle="tab" aria-controls="eight">Reparação de electrodomésticos</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#nine" role="tab" id="nine-tab" data-toggle="tab" aria-controls="nine">Serviços de Jardinagem</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#ten" role="tab" id="ten-tab" data-toggle="tab" aria-controls="ten">Serviços de Limpeza</a></li>
+										<li role="presentation"><a class="buttonMenuForm" href="#eleven" role="tab" id="eleven-tab" data-toggle="tab" aria-controls="eleven">Manutenção de casas de férias ou 2ª Habitação</a></li>
+									</ul>
+									</div>
+									<div id="myTabContent" class="tab-content">
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade in active" id="one" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-md-6 col-sm-12 video-w3lsleft img__wrap" style="overflow: hidden; padding: 0 !important; background: white !important">	
+														
+															<img id="caixilhariaImg" class="img__img" src="images/caixilharias/1.jpg" alt="caixilharias" width="auto" height="677px">
+														
+														<a class="fancybox-thumbs" style="text-decoration: none" data-fancybox-group="thumb2" href="images/caixilharias/1.jpg" title="Janela Aluminio">
+															<div class="img__description_layer">
+															    <p class="img__description">VER GALERIA</p>
+															</div>
+														</a>
+														<!--<img src="images/caixilharias.jpg" width="100%">-->
+
+														<!-- Galeria Caixilharias -->
+														<a class="fancybox-thumbs hidden" data-fancybox-group="thumb2" href="images/caixilharias/2.jpg" title="Janela PVC"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb2" href="images/caixilharias/3.jpg" title="Janelas Madeira"></a>
+													</div>
+													<div class="col-md-6 col-sm-12 video-w3lsright" style="max-height:677px; background-color: rgba(0,188,212,0.8); padding: 4.0em 8em 5.45em 8em !important">	 
+														<h3 class="font20Imp">Caixilho em Alumínio com corte térmico (ou ruptura térmica)</h3>
+															<br>
+															<ul>
+																<li><p>Bom isolamento térmico e acústico;</p></li>
+																<li><p>Excelente desempenho mecânico que permite a construção de vãos de grande dimensão;</p></li>
+																<li><p>Elevada durabilidade.</p></li>
+															</ul>
+															<br>
+															<h3 class="font20Imp">Caixilho em PVC</h3>
+															<br>
+															<ul>
+																<li><p>Bom isolamento térmico e acústico;</p></li>
+																<li><p>Janelas resistentes e com grande durabilidade;</p></li>
+																<li><p>Material fácil de trabalhar e permitindo a realização de janelas nos mais diversos tamanhos e formatos.</p></li>
+															</ul>
+															<br>
+															<h3 class="font20Imp">Caixilho em Madeira</h3>
+															<br>
+															<ul>
+																<li><p>Excelente isolamento térmico;</p></li>
+																<li><p>É um produto natural, que aliada à sua durabilidade torna-se uma interessante solução do ponto de vista ecológico;</p></li>
+																<li><p>Grande capacidade estrutural.</p></li>
+															</ul>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -20px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="two" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsright" style="max-height:637px; background-color: rgb(255,152,0)">	 
+														<h3 class="font20Imp">Alumínio Soldado  | Ferro  | Inox</h3>
+														<br>
+														<ul>
+															<li><p>Portões</p></li>
+															<li><p>Grades exteriores</p></li>
+															<li><p>Gradeamentos</p></li>
+															<li><p>Guardas de protecção</p></li>
+															<li><p>Escadas</p></li>
+														</ul>
+														<br>
+														<h3 class="font20Imp">Automatismos</h3>
+														<br>
+														<ul>
+															<li><p>Automatismos para Portões</p></li>
+															<li><p>Automatismos para Portas Seccionadas</p></li>
+														</ul>
+														<br>
+														<h3 class="font20Imp">Portas Seccionadas</h3>
+														<br>
+														<h3 class="font20Imp">Estores Interiores e Exteriores</h3>
+													</div>
+													<div class="col-sm-6 video-w3lsleft img__wrap" style="max-height:637px; overflow: hidden; padding: 0 !important; background: white !important">	
+														
+															<img src="images/aluminio/1.jpg" alt="aluminio" width="100%" style="min-height: 609px; overflow: hidden">
+
+														<a class="fancybox-thumbs" style="text-decoration: none" data-fancybox-group="thumb3" href="images/aluminio/1.jpg" title="Portão Correr">
+															<div class="img__description_layer">
+															    <p class="img__description">VER GALERIA</p>
+															</div>
+														</a>
+
+														<!-- Galeria Aluminio -->
+														<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/2.png" title="Portão Abrir"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/3.jpg" title="Portão Abrir e Grade"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/4.jpg" title="Grade"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/5.jpg" title="Portões Ferro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/6.jpg" title="Grade Inox"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/7.jpg" title="Grade Inox"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/8.jpg" title="Grade Inox Interior"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/9.jpg" title="Corrimão Inox"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/10.jpg" title="Escadas Ferro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/11.jpg" title="Porta Seccionada"></a>
+
+														<!--<img src="images/aluminio.jpg" width="100%" style="min-height: 535px">-->
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="tree" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsleft img__wrap" style="overflow:hidden; padding: 0 !important; background: white !important">	
+														
+															<img id="vidroImg" src="images/vidro/1.jpg" alt="vidro" width="100%" height="637px">
+														
+														<a class="fancybox-thumbs" style="text-decoration: none" data-fancybox-group="thumb4" href="images/vidro/1.jpg" title="Harmónio">
+															<div class="img__description_layer">
+															    <p class="img__description">VER GALERIA</p>
+															</div>
+														</a>
+														<!-- Galeria Vidro -->
+														<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/2.jpg" title="Vidro Lacado"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/3.jpg" title="Resguardo Duche em Vidro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/4.jpg" title="Guarda em Vidro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/5.jpg" title="Guarda em Vidro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/6.jpg" title="Porta em Vidro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/7.jpg" title="Porta em Vidro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/8.jpg" title="Porta em Vidro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb4" href="images/vidro/9.png" title="Porta em Vidro"></a>
+														<!--<img src="images/vidro.jpg" width="100%">-->
+													</div>
+													<div class="col-sm-6 video-w3lsright" style="height:637px;  background-color: rgba(0,188,212,0.8)">	
+														<h3>Trabalhos em Vidro</h3> 
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Divisórias em vidro</p></li>
+															<li><p style="font-size: 16px">Vidros lacados</p></li>
+															<li><p style="font-size: 16px">Resguardos de banho</p></li>
+															<li><p style="font-size: 16px">Guardas em vidro</p></li>
+															<li><p style="font-size: 16px">Portas em vidro</p></li>
+														</ul>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="four" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgb(255,152,0)">	 
+														<h3>Revestimentos</h3>
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Pintura</p></li>
+															<li><p style="font-size: 16px">Divisórias e Tectos em Pladur</p></li>
+															<li><p style="font-size: 16px">Papel de Parede</p></li>
+															<li><p style="font-size: 16px">Pedra</p></li>
+															<li><p style="font-size: 16px">Azulejos / Pastilha</p></li>
+														</ul>
+													</div>
+													<div class="col-sm-6 video-w3lsleft img__wrap" style="height:637px; overflow: hidden; padding: 0 !important; background: white !important">	
+														
+														<img src="images/revestimentos/1.jpg" alt="revestimentos" width="100%" style=" background-position: -50px">
+														
+														<a class="fancybox-thumbs" style="text-decoration: none" data-fancybox-group="thumb5" href="images/revestimentos/1.jpg" title="Papel de Parede">
+															<div class="img__description_layer">
+															    <p class="img__description">VER GALERIA</p>
+															</div>
+														</a>
+														<!-- Galeria Revestimentos -->
+														<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/2.jpg" title="Papel de Parede"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/3.jpg" title="Pintura"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/4.jpg" title="Estante em Pladur"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/5.jpg" title="Tecto em Pladur"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/6.jpg" title="Parede Revestida com Pedra"></a>
+														<!--<img src="images/revestimentos.jpg" width="100%" style=" background-position: -50px">-->
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="five" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsleft img__wrap" style="overflow:hidden; padding: 0 !important; margin-bottom: -100px !important; background-color: white !important">	
+														
+														<img id="carpintariaImg" src="images/carpintaria/1.jpg" alt="carpintaria" width="100%" height="637px">
+														
+														<a class="fancybox-thumbs" style="text-decoration: none" data-fancybox-group="thumb6" href="images/carpintaria/1.jpg" title="Cozinha">
+															<div class="img__description_layer">
+															    <p class="img__description">VER GALERIA</p>
+															</div>
+														</a>
+
+														<!-- Galeria carpintaria -->
+														<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/2.jpg" title="Cozinha"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/3.jpg" title="Cozinha"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/4.jpg" title="Cozinha"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/5.jpg" title="Porta Interior"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/6.jpg" title="Roupeiro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/7.jpg" title="Roupeiro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/8.jpg" title="Roupeiro"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/9.jpg" title="Roupeiro"></a>
+														<!--<img src="images/carpintaria.jpg" width="100%" style="object-position: 0px -100px;">-->
+													</div>
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgba(0,188,212,0.8)">	
+														<h3 class="font20Imp">Carpintaria</h3> 
+														<br>
+														<ul>
+															<li><p>Roupeiros de madeira</p></li>
+															<li><p>Portas interiores e exteriores</p></li>
+															<li><p>Cozinhas por Medida</p></li>
+															<li><p>Aplicação de chão flutuante</p></li>
+															<li><p>Aplicação de decks</p></li>
+															<li><p>Apainelado</p></li>
+															<li><p>Rodapé / Soalho</p></li>
+															<li><p>Tectos falsos em madeira</p></li>
+															<li><p>Móveis por medida</p></li>
+														</ul>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="six" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgb(255,152,0)">	 
+														<h3>Electricidade</h3>
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Instalações elétricas e telecomunicações</p></li>
+															<li><p style="font-size: 16px">Ligações de eletricidade para obras</p></li>
+															<li><p style="font-size: 16px">Manutenções e assistência (Moradias, espaços comerciais, Industria)</p></li>
+															<li><p style="font-size: 16px">Antenas (para TV e parabólicas)</p></li>
+															<li><p style="font-size: 16px">Alarmes (Incêndio e Intrusão) / Videovigilância</p></li>
+															<li><p style="font-size: 16px">Entre outros...</p></li>
+														</ul>
+													</div>
+													<div class="col-sm-6 video-w3lsleft" style="overflow: hidden; padding: 0 !important">	
+														<img src="images/electricidade.jpg" width="auto" height="637px">
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="seven" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsleft" style="overflow:hidden; padding: 0 !important; background-color: white !important">	
+														<img src="images/pichelaria.jpg" width="auto" height="637px">
+													</div>
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgba(0,188,212,0.8)">	
+														<h3>Pichelaria</h3> 
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Pichelaria Geral</p></li>
+															<li><p style="font-size: 16px">Canalizações de água e esgotos</p></li>
+															<li><p style="font-size: 16px">Climatização e aquecimento central</p></li>
+															<li><p style="font-size: 16px">Aspiração central</p></li>
+															<li><p style="font-size: 16px">Sistemas para rega e piscinas</p></li>
+															<li><p style="font-size: 16px">Energia Solar</p></li>
+														</ul>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="eight" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgb(255,152,0)">	 
+														<h3 style="text-align: center; margin-top: 100px">Reparação de Electrodomésticos</h3>
+														<br>
+														<p style="margin-top: 50px; font-size: 20px; color: white; text-align: center">"Avariou um electrodoméstico, já não está na garantia e não sabe quem contactar? Nós resolvemos! Enviamos um profissional a sua casa!"</p>
+													</div>
+													<div class="col-sm-6 video-w3lsleft" style="max-height:637px; overflow: hidden; padding: 0 !important; background-color: white !important">	
+														<img src="images/reparacao.jpg" width="100%">
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div>
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="nine" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsleft img__wrap" style="max-height:637px; overflow:hidden; padding: 0 !important; background: white !important">	
+														
+														<img id="jardinagemImg" src="images/jardinagem/1.jpg" alt="jardinagem" width="100%" height="auto" style="object-position: 0px -200px;">
+														
+														<a class="fancybox-thumbs" style="text-decoration: none" data-fancybox-group="thumb7" href="images/jardinagem/1.jpg" title="Jardinagem">
+															<div class="img__description_layer">
+															    <p class="img__description">VER GALERIA</p>
+															</div>
+														</a>
+
+														<!-- Galeria jardinagem -->
+														<a class="fancybox-thumbs hidden" data-fancybox-group="thumb7" href="images/jardinagem/2.jpg" title="Jardinagem"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb7" href="images/jardinagem/3.jpg" title="Limpeza de Matas"></a>
+                										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb7" href="images/jardinagem/4.jpg" title="Abate de Árvores"></a>
+													</div>
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgba(0,188,212,0.8)">	
+														<h3>Jardinagem</h3> 
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Criação e Manutenção de jardins</p></li>
+															<li><p style="font-size: 16px">Limpeza de Terrenos e floresta</p></li>
+															<li><p style="font-size: 16px">Abate de árvores</p></li>
+														</ul>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -20px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="ten" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsright" style="max-height:637px; background-color: rgb(255,152,0)">	 
+														<h3>Serviços de Limpeza</h3>
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Limpezas domésticas (limpeza de mobiliário e equipamentos, limpeza vidros, limpeza de chão e higienização de wc´s)</p></li>
+															<li><p style="font-size: 16px">Limpezas de Persianas e vidros</p></li>
+															<li><p style="font-size: 16px">Limpezas Pós-obra</p></li>
+															<li><p style="font-size: 16px">Limpezas Industriais em instituições</p></li>
+														</ul>
+													</div>
+													<div class="col-sm-6 video-w3lsleft" style="max-height:637px; overflow: hidden; padding: 0 !important; background: white !important">	
+														<img src="images/limpeza.jpg" width="100%">
+													</div>
+													<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>
+					<!-- /////////////////////// -->
+										<div role="tabpanel" class="tab-pane fade" id="eleven" aria-labelledby="expeditions-tab">
+											<div class="tab-info">
+												<div class=" jarallax">
+													<div class="col-sm-6 video-w3lsleft" style="overflow: hidden; padding: 0 !important; background: white !important">	
+														<img id="manutencaoImg" src="images/manutencao.jpg" width="100%" height="637px">
+													</div>
+													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgba(0,188,212,0.8)">	
+														<h3>Manutenção</h3> 
+														<br>
+														<ul>
+															<li><p style="font-size: 16px">Se é <strong>EMIGRANTE</strong> contacte-nos para conhecer as soluções integradas para manutenção da sua casa em Portugal. </p></li>
+															<li><p style="font-size: 16px">Caso tenha <strong>UMA OU MAIS HABITAÇÕES</strong> que não estejam habitadas durante um largo período de tempo, contacte-nos para fazer manutenção da mesma! </p></li>
+															<li><p style="font-size: 16px">Deixe-nos a chave de sua casa e confie no nosso trabalho!</p></li>
+														</ul>
+													</div>
+													<div class="clearfix"></div>
+												</div>
+												<!-- Row Branca para nivelar -->
+												<div class="row" style="margin: 0; position: relative; background-color: white; z-index: 10; margin-top: -50px; width: 100%; height: 100px"></div>
+											</div>
+										</div> 
+					<!-- /////////////////////// -->
+									</div>
+								</div> 
+							</div>
+					</div>	
+					<!-- //Secção descrição serviços-->
+				</div>
+				<!-- ROW 1 -------- -->
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-6 services-agile-grids">
+							<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+							<h4>Escolha um dos nossos serviços</h4>
+							<!--<p>Itaque earum rerum hic tenetur a sapiente delectus 
+								reiciendis maiores alias</p> -->
+						</div>
+						<div class="col-sm-4 col-xs-6 services-agile-grids services-grd-mdl1">
+							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+							<h4>Peça um orçamento grátis</h4>
+							<!--<p>Itaque earum rerum hic tenetur a sapiente delectus 
+								reiciendis maiores alias</p> -->
+						</div>
+						<div class="col-sm-4 col-xs-6 services-agile-grids">
+							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+							<h4>Receba uma resposta rápida e eficiente!</h4>
+							<!--<p>Itaque earum rerum hic tenetur a sapiente delectus 
+								reiciendis maiores alias</p> -->
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+	</div>
+	<!-- //services -->
+	<!-------------------------------------------------- footer -->
+	<!-- map -->
+	<div class="map agileits">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.6761466062975!2d-8.483569170738406!3d42.07591499870044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDA0JzMzLjMiTiA4wrAyOCc1OC45Ilc!5e1!3m2!1spt-PT!2spt!4v1507114589630" allowfullscreen></iframe>
+	</div>
+	<!-- //map --> 
+	<div class="subscribe-agileinfo jarallax">    
+		<!------------------------------------------------- contacto ----------------------------------------------------- -->
+			<!-- contact -->
+			<div id="contact" class="contact cd-section">
+				<div class="container">
+					<div class="agileits-title">
+						<h3>Contacto</h3> 
+					</div>
+					<div class="contact-row agileits-w3layouts">  
+						<div class="col-md-6 col-sm-6 contact-w3lsleft">
+							<div class="contact-grid agileits" style="padding: 5em 3em !important">
+								<h4>Envie-nos um email </h4>
+								<form action="emailContacto.php" method="post">
+									<div class="styled-input agile-styled-input-top">
+										<input type="text" name="nome" required>
+										<label>Nome</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<input type="text" name="email" required> 
+										<label>Email</label>
+										<span></span>
+									</div> 
+									<div class="styled-input">
+										<input type="text" name="assunto" required>
+										<label>Assunto</label>
+										<span></span>
+									</div>
+									<div class="styled-input">
+										<textarea name="mensagem" required></textarea>
+										<label>Mensagem</label>
+										<span></span>
+									</div>	 
+									<input type="submit" value="ENVIAR">
+								</form> 
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 contact-w3lsright">
+							<h6 class="paddingL90" style="padding-left: 90px; margin-top: 0 !important"><span>Centro Obra</span> </h6>
+								<br>
+								<h3 class="paddingL90" style="color: white; padding-left: 90px;">Entre em contacto connosco, temos todo o gosto de falar consigo.</h3>
+								<br>
+							<div class="address-row">
+								<div class="col-xs-2 address-left">
+									<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+								</div>
+								<div class="col-xs-10 address-right">
+									<h5>Localização</h5>
+									<p>Rua do Cano <br>
+									   Edifício Pirâmide, Loja nº41 <br>
+									   4950-446, Cortes - Monção</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="address-row w3-agileits">
+								<div class="col-xs-2 address-left">
+									<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+								</div>
+								<div class="col-xs-10 address-right">
+									<h5>Email</h5>
+									<p><a href="mailto:geral.centroobra@gmail.com"> geral.centroobra@gmail.com</a></p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="address-row w3-agileits">
+								<div class="col-xs-2 address-left">
+									<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+								</div>
+								<div class="col-xs-10 address-right">
+									<h5>Website</h5>
+									<p>www.centroobra.com</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="address-row">
+								<div class="col-xs-2 address-left">
+									<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+								</div>
+								<div class="col-xs-10 address-right">
+									<h5>Telefone</h5>
+									<p>00351 251 648 034</p>
+									<h5>Telemóvel</h5>
+									<p>00351 967 315 101</p>
+								</div>
+								<div class="clearfix"> </div>
+							</div>  
+						</div>
+						<div class="clearfix"> </div>
+					</div>	
+				</div>	
+			</div>
+			<!-- //contact --> 
+
+		<!----------------------------------------------------- Socials -->
+		<div class="wthree-sub">    
+			<div class="container"> 
+				<div class="w3social-icons w3sub-agileits-icons">
+					<ul>
+						<li><a href="https://www.facebook.com/Centro-Obra-497371710624674/" class="fa fa-facebook icon icon-border facebook"> </a></li>
+						<li><a href="https://www.pinterest.pt/centroobra/" class="fa fa-pinterest icon icon-border twitter"> </a></li>
+						<li><a href="https://www.linkedin.com/in/centro-obra-8b8218151/" class="fa fa-linkedin icon icon-border googleplus"> </a></li>
+					</ul>
+				</div>
+			</div>
+		</div> 
+		<div class="copyw3-agile">
+			<div class="container"> 
+				<p>© 2017 Centro Obra | Developed by <a href="http://www.marcobrinde.com">Marcobrinde</a></p>
+			</div>
+		</div> 
+	</div>
+	<!-- //subscribe --> 
+	<!-- js -->
+	<script src="js/jquery-2.2.3.min.js"></script>  
+	<script src="js/jarallax.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script> 
+	<!-- //js --> 
+	<!-- start-smooth-scrolling --> 
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	 
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- FlexSlider --> 
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript">
+		$(window).load(function(){
+			//Click nos buttons do menu form
+
+			$(".buttonMenuForm").click(function() {
+			    $('html,body').animate({
+			        scrollTop: $(".menu-form").offset().top},
+			        'slow');
+			});
+
+
+			//remover logo clone
+			$("#logoCentro_clone").remove();
+
+		  $('.flexslider').flexslider({
+			animation: "slide",
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+		  });
+		});
+
+		function closeMenu(){
+			toggleMenuButton("menu-trigger");
+			$("#nav-overlay").removeClass("open");
+			$(".menu-trigger").removeClass("open");
+
+		}
+
+
+		// FANCYBOX
+		 $('.fancybox-thumbs').fancybox({
+                prevEffect : 'none',
+                nextEffect : 'none',
+
+                closeBtn  : true,
+                arrows    : true,
+                nextClick : true,
+
+                helpers : {
+                    thumbs : {
+                        width  : 50,
+                        height : 50
+                    }
+                },
+                beforeShow: function () {
+                    /* Disable right click */
+                    $.fancybox.wrap.bind("contextmenu", function (e) {
+                      return false;
+                    });
+                    /* Disable drag */
+                    $.fancybox.wrap.bind("dragstart", function (e) {
+                      return false;
+                    });
+
+                }
+            });
+
+		 //Toggle MENU Button
+		 function toggleMenuButton(button){
+
+		 	if($('.' + button).text() == "MENU"){
+		 		$('.' + button).text("X");
+		 	}else{
+		 		$('.' + button).text("MENU")
+		 	}
+		 }
+
+	</script>
+
+		<!-- feedback -->
+		<script src="js/owl.carousel.js"></script>
+		<link href="css/owl.carousel.css" rel="stylesheet">
+			<!-- requried-jsfiles-for owl -->
+        <script>
+		    $(document).ready(function() {
+		      $("#owl-demo2").owlCarousel({
+		        items : 1,
+		        lazyLoad : false,
+		        autoPlay : true,
+		        navigation : false,
+		        navigationText :  false,
+		        pagination : true,
+		      });
+		    });
+		  </script>
+			<!-- //requried-jsfiles-for owl -->
+	<!-- //feedback -->	
+
+
+	<!-- End-slider-script -->	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
