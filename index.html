@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Centro Obra Serralharia Caixilharia Estores Aluminio Soldado Ferro Inox Vidraria Portas Seccionadas Automatismos Carpintaria Pladur Pintura Papel de Parede Electricidade Pichelaria Limpezas Jardinagem Manutenção Casas Ferias Monção Norte Portugal Viana do Castelo" />
+<meta name="keywords" content="Centro Obra, Serralharia, Caixilharia, Estores, Aluminio, Soldado, Ferro, Inox, Vidraria, Portas Seccionadas, Automatismos, Carpintaria, Pladur, Pintura, Papel de Parede, Electricidade, Pichelaria, Limpezas, Jardinagem, Manutenção, Casas Ferias, Monção, Norte, Portugal, Viana do Castelo">
+    <link rel="canonical" href="http://www.centroobra.com">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<meta name="author" content="André Martinez">
+<meta name="author" content="André Martinez - Marcobrinde">
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
@@ -113,10 +115,27 @@
 	.test-grid1{
 		height: 250px;
 	}
+	#ligueFixo{
+		left: 1.5%;
+		top: 2.5%;
+		position: fixed;
+		z-index: 90;
+	}
+	.aModal:hover .test-grid1{
+		background: #E6E6E6;
+		text-decoration: none;
+	}
 </style>
 </head>
 <body> 
 	<div id="nav-overlay" class="nav-w3right">
+		<a id="ligueFixo" class="btn btn-default" href="#contact" role="button">
+			<h2 style="font-family: 'Source Sans Pro', sans-serif;">Contacte-nos!</h2>
+			<br>
+			<span class="fa fa-mobile" style="display: inline-block; margin-right: 5px"></span><p style="display: inline-block;">  00351 <strong>967 315 101</strong></p>
+			<br>
+			<span class="fa fa-phone" style="display: inline-block; margin-right: 5px; margin-left: -7px"></span><p style="display: inline-block;">00351 <strong>251 648 034</strong></p>
+		</a>
 		<span class="menu-trigger trigger" rel="nav-overlay" style="font-size: 20px; float: right" onclick="toggleMenuButton('menu-trigger')">MENU</span>
 		<div >
 			<nav class="w3ls-nav">
@@ -133,14 +152,6 @@
 	<!-------------------------------------------------- banner --------------------------------------------------------- -->
 	<div class="banner" >
 		<div class="banner-layer">
-			<!-- header -->
-			<!--<div class="header-agileits"> 
-				<div class="w3ls-logo">
-					<a href="index.html"><img id="logoCentro" src="images/logo.png" alt="logo"></a>
-				</div>  
-				<div class="clearfix"> </div>
-			</div> -->
-			<!-- //header -->
 			<!-- menu js-->
 			<script src="js/jquery-3.1.1.slim.min.js"></script> 
 			<script>
@@ -174,10 +185,12 @@
 					<div class="flexslider">
 						<div class="banner-w3lstext">
 							<div class="logoDiv">
-								<a href="http://www.centroobra.com"><img id="logoCentro" src="images/logo.png" alt="logo"></a>
+								<a href="http://www.centroobra.com"><img id="logoCentro" src="images/logo.png" alt="logo">
+									<br>
+								<!--<p id="slogan1">Todos os serviços para a sua casa</p>
+								<p id="slogan2">Num só local</p>-->
+								<img src="images/slogan.png" alt="slogan" width="55%" height="auto" style="margin-top: 50px"></a>
 							</div>
-							<!--<h6>Monção</h6>
-							<p>Simplifique a sua vida </p>-->
 						</div>
 					</div> 	 
 				</div>
@@ -228,77 +241,211 @@
 					<div id="owl-demo2" class="owl-carousel">
 						<div class="agile">
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>“Parece-me uma ideia arrojada e bastante viável! É algo que não existe em Monção!”</p>
-									<h4>Filipe </h4>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal1">
+									<div class="test-grid1">
+										<p>“Parece-me uma ideia arrojada e bastante viável! É algo que não existe em Monção!”</p>
+										<h4>Filipe </h4>
+									</div>	
+								</a>
 							</div>	
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>“Eu precisei de um Picheleiro e não sabia quem poderia contactar, pois não conheço nenhum. Como sabia que a minha amiga estava prestes a abrir este negócio liguei com ela e tratou de tudo, não tive de me preocupar com nada!”</p>
-									<h4>Cátia</h4>
-									<span>Pereira</span>
-								</div>	
-							</div>	
-							<div class="clearfix"></div>
-						</div>
-						<div class="agile">
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>“É uma óptima ideia, não existe nada assim aqui em Monção!”</p>
-									<h4>Madalena</h4>
-									<span>Caldas</span>
-								</div>	
-							</div>	
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>“Por acaso, tenho obras para fazer em casa, que é uma divisão que tem humidade, se calhar precisa de tratamento, quero pôr pladur e depois pintá-la, mas a verdade é que vou adiando pois não tenho tempo para pesquisar e andar a ligar…Ainda bem que apareceu, pode dar muito jeito!”</p>
-									<h4>Armindo</h4>
-									<span>Lobato</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal2">
+									<div class="test-grid1">
+										<p>“Eu precisei de um Picheleiro e não sabia quem poderia contactar, pois não conheço nenhum. Como sabia que a minha amiga estava prestes a abrir este negócio liguei com ela e tratou de tudo, não tive de me preocupar com nada!”</p>
+										<h4>Cátia</h4>
+										<span>Pereira</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="clearfix"></div>
 						</div>
 						<div class="agile">
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>“Eu vivo sozinho, mas como trabalho todo o dia não tenho tempo para cuidar do jardim e da casa, obras então nem falo…Chego ao fim-de-semana e só quero sair com os amigos e descansar. Para pessoas como eu, pode ser uma grande ajuda!”</p>
-									<h4>André</h4>
-									<span>Fernandes</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal3">
+									<div class="test-grid1">
+										<p>“É uma óptima ideia, não existe nada assim aqui em Monção!”</p>
+										<h4>Madalena</h4>
+										<span>Caldas</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>“É uma ideia interessante, penso que vais ter sucesso! Se souberes gerir as coisas e deixares os clientes satisfeitos, tens negócio de certeza! A ideia tem tudo para funcionar.”</p>
-									<h4>José</h4>
-									<span>Manuel</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal4">
+									<div class="test-grid1">
+										<p>“Por acaso, tenho obras para fazer em casa, que é uma divisão que tem humidade, se calhar precisa de tratamento, quero pôr pladur e depois pintá-la, mas a verdade é que vou adiando pois não tenho tempo para pesquisar e andar a ligar…Ainda bem que apareceu, pode dar muito jeito!”</p>
+										<h4>Armindo</h4>
+										<span>Lobato</span>
+									</div>
+								</a>	
 							</div>	
 							<div class="clearfix"></div>
 						</div>
 						<div class="agile">
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>Pergunta Cliente: “Por acaso, tenho a porta da garagem avariada, abre até metade mas depois pára. Vocês também arranjam isso?” <br>
-									Resposta do Centro Obra: “Arranjamos sim, é só a Senhora dizer-me qual a melhor altura e eu faço a marcação para o mais breve possível.”</p>
-									<h4>Lurdes</h4>
-									<span>Pires</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal5">
+									<div class="test-grid1">
+										<p>“Eu vivo sozinho, mas como trabalho todo o dia não tenho tempo para cuidar do jardim e da casa, obras então nem falo…Chego ao fim-de-semana e só quero sair com os amigos e descansar. Para pessoas como eu, pode ser uma grande ajuda!”</p>
+										<h4>André</h4>
+										<span>Fernandes</span>
+									</div>
+								</a>	
 							</div>	
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>Pergunta Cliente: “Já percebi que fazem pintura mas por acaso colocam papel de parede?”
-										<br>
-									Resposta Centro Obra: “Sim, colocamos! Venha à nossa loja, mostro-lhe várias possibilidades de cores e tipos de papel de parede, oriento-a e dou-lhe opiniões. Vai ver que vai gostar!”</p>
-									<h4>Carla</h4>
-									<span>Pereira</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal6">
+									<div class="test-grid1">
+										<p>“É uma ideia interessante, penso que vais ter sucesso! Se souberes gerir as coisas e deixares os clientes satisfeitos, tens negócio de certeza! A ideia tem tudo para funcionar.”</p>
+										<h4>José</h4>
+										<span>Manuel</span>
+									</div>	
+								</a>
+							</div>	
+							<div class="clearfix"></div>
+						</div>
+						<div class="agile">
+							<div class="col-md-6 test-grid">
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal7">
+									<div class="test-grid1">
+										<p>Pergunta Cliente: “Por acaso, tenho a porta da garagem avariada, abre até metade mas depois pára. Vocês também arranjam isso?” <br>
+										Resposta do Centro Obra: “Arranjamos sim, é só a Senhora dizer-me qual a melhor altura e eu faço a marcação para o mais breve possível.”</p>
+										<h4>Lurdes</h4>
+										<span>Pires</span>
+									</div>	
+								</a>
+							</div>	
+							<div class="col-md-6 test-grid">
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal8">
+									<div class="test-grid1">
+										<p>Pergunta Cliente: “Já percebi que fazem pintura mas por acaso colocam papel de parede?”
+											<br>
+										Resposta Centro Obra: “Sim, colocamos! Venha à nossa loja, mostro-lhe várias possibilidades de cores e tipos de papel de parede, oriento-a e dou-lhe opiniões. Vai ver que vai gostar!”</p>
+										<h4>Carla</h4>
+										<span>Pereira</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="clearfix"></div>
 						</div>			
 					</div>
 				</div>	
 			</div>
+		</div>
+	</div>
+</div>
+<!------------------------------------------------------ Modals ------------------------------------------------- -->
+
+<!-- modal1 -->
+<div class="modal about-modal w3-agileits fade" id="modal1" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>“Parece-me uma ideia arrojada e bastante viável! É algo que não existe em Monção!”</p>
+				<h6>Filipe</h6>
+			</div> 
+		</div>
+	</div>
+</div> 
+<!-- modal2 -->
+<div class="modal about-modal w3-agileits fade" id="modal2" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>“Eu precisei de um Picheleiro e não sabia quem poderia contactar, pois não conheço nenhum. Como sabia que a minha amiga estava prestes a abrir este negócio liguei com ela e tratou de tudo, não tive de me preocupar com nada!”</p>
+				<h6>Cátia Pereira</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal3 -->
+<div class="modal about-modal w3-agileits fade" id="modal3" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>“É uma óptima ideia, não existe nada assim aqui em Monção!”</p>
+				<h6>Madalena Caldas</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal4 -->
+<div class="modal about-modal w3-agileits fade" id="modal4" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>“Por acaso, tenho obras para fazer em casa, que é uma divisão que tem humidade, se calhar precisa de tratamento, quero pôr pladur e depois pintá-la, mas a verdade é que vou adiando pois não tenho tempo para pesquisar e andar a ligar…Ainda bem que apareceu, pode dar muito jeito!”</p>
+				<h6>Armindo Lobato</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal5 -->
+<div class="modal about-modal w3-agileits fade" id="modal5" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>“Eu vivo sozinho, mas como trabalho todo o dia não tenho tempo para cuidar do jardim e da casa, obras então nem falo…Chego ao fim-de-semana e só quero sair com os amigos e descansar. Para pessoas como eu, pode ser uma grande ajuda!”</p>
+				<h6>André Fernandes</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal6 -->
+<div class="modal about-modal w3-agileits fade" id="modal6" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>“É uma ideia interessante, penso que vais ter sucesso! Se souberes gerir as coisas e deixares os clientes satisfeitos, tens negócio de certeza! A ideia tem tudo para funcionar.”</p>
+				<h6>José Manuel</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal7 -->
+<div class="modal about-modal w3-agileits fade" id="modal7" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>Pergunta Cliente: “Por acaso, tenho a porta da garagem avariada, abre até metade mas depois pára. Vocês também arranjam isso?”</p> 
+				<br>
+				<p>Resposta do Centro Obra: “Arranjamos sim, é só a Senhora dizer-me qual a melhor altura e eu faço a marcação para o mais breve possível.”</p>
+				<h6>Lurdes Pires</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal8 -->
+<div class="modal about-modal w3-agileits fade" id="modal8" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>Pergunta Cliente: “Já percebi que fazem pintura mas por acaso colocam papel de parede?”</p>
+					<br>
+				<p>Resposta Centro Obra: “Sim, colocamos! Venha à nossa loja, mostro-lhe várias possibilidades de cores e tipos de papel de parede, oriento-a e dou-lhe opiniões. Vai ver que vai gostar!”</p>
+				<h6>Carla Pereira</h6>
+			</div> 
 		</div>
 	</div>
 </div>
@@ -433,7 +580,6 @@
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/10.jpg" title="Escadas Ferro"></a>
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb3" href="images/aluminio/11.jpg" title="Porta Seccionada"></a>
 
-														<!--<img src="images/aluminio.jpg" width="100%" style="min-height: 535px">-->
 													</div>
 													<div class="clearfix"></div>
 												</div>
@@ -512,7 +658,6 @@
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/4.jpg" title="Estante em Pladur"></a>
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/5.jpg" title="Tecto em Pladur"></a>
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb5" href="images/revestimentos/6.jpg" title="Parede Revestida com Pedra"></a>
-														<!--<img src="images/revestimentos.jpg" width="100%" style=" background-position: -50px">-->
 													</div>
 													<div class="clearfix"></div>
 												</div>
@@ -543,7 +688,6 @@
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/7.jpg" title="Roupeiro"></a>
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/8.jpg" title="Roupeiro"></a>
                 										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb6" href="images/carpintaria/9.jpg" title="Roupeiro"></a>
-														<!--<img src="images/carpintaria.jpg" width="100%" style="object-position: 0px -100px;">-->
 													</div>
 													<div class="col-sm-6 video-w3lsright" style="height:637px; background-color: rgba(0,188,212,0.8)">	
 														<h3 class="font20Imp">Carpintaria</h3> 
@@ -721,23 +865,21 @@
 				<!-- ROW 1 -------- -->
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4 col-xs-6 services-agile-grids">
-							<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-							<h4>Escolha um dos nossos serviços</h4>
-							<!--<p>Itaque earum rerum hic tenetur a sapiente delectus 
-								reiciendis maiores alias</p> -->
-						</div>
-						<div class="col-sm-4 col-xs-6 services-agile-grids services-grd-mdl1">
-							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-							<h4>Peça um orçamento grátis</h4>
-							<!--<p>Itaque earum rerum hic tenetur a sapiente delectus 
-								reiciendis maiores alias</p> -->
-						</div>
+						<a href="#services">
+							<div class="col-sm-4 col-xs-6 services-agile-grids">
+								<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+								<h4>Escolha um dos nossos serviços</h4>
+							</div>
+						</a>
+						<a href="#contact">
+							<div class="col-sm-4 col-xs-6 services-agile-grids services-grd-mdl1">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								<h4>Peça um orçamento grátis</h4>
+							</div>
+						</a>
 						<div class="col-sm-4 col-xs-6 services-agile-grids">
 							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
 							<h4>Receba uma resposta rápida e eficiente!</h4>
-							<!--<p>Itaque earum rerum hic tenetur a sapiente delectus 
-								reiciendis maiores alias</p> -->
 						</div>
 					</div>
 				</div>
@@ -912,6 +1054,20 @@
 	<script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
 	<script type="text/javascript">
 		$(window).load(function(){
+
+			//Resize window
+			$(window).resize(function(){
+				if($(window).width() < 550){
+					$("#ligueFixo").html("<span class=\"fa fa-phone\" style=\"font-size:20px\"></span>");
+				}else{
+					$("#ligueFixo").html("<h2 style=\"font-family: 'Source Sans Pro', sans-serif;\">Contacte-nos!</h2>\
+											<br>\
+											<span class=\"fa fa-mobile\" style=\"display: inline-block; margin-right: 5px\"></span><p style=\"display: inline-block;\">  00351 <strong>967 315 101</strong></p>\
+											<br>\
+											<span class=\"fa fa-phone\" style=\"display: inline-block; margin-right: 5px; margin-left: -7px\"></span><p style=\"display: inline-block;\">00351 <strong>251 648 034</strong></p>");
+				}
+			});
+
 			//Click nos buttons do menu form
 
 			$(".buttonMenuForm").click(function() {

@@ -123,10 +123,27 @@
 		width: 100%; 
 		height: 100px;
 	}
+	#ligueFixo{
+		left: 1.5%;
+		top: 2.5%;
+		position: fixed;
+		z-index: 90;
+	}
+	.aModal:hover .test-grid1{
+		background: #E6E6E6;
+		text-decoration: none;
+	}
 </style>
 </head>
 <body> 
 	<div id="nav-overlay" class="nav-w3right">
+		<a id="ligueFixo" class="btn btn-default" href="#contact" role="button">
+			<h2 style="font-family: 'Source Sans Pro', sans-serif;">Appelez-nous!</h2>
+			<br>
+			<span class="fa fa-mobile" style="display: inline-block; margin-right: 5px"></span><p style="display: inline-block;">  00351 <strong>967 315 101</strong></p>
+			<br>
+			<span class="fa fa-phone" style="display: inline-block; margin-right: 5px; margin-left: -7px"></span><p style="display: inline-block;">00351 <strong>251 648 034</strong></p>
+		</a>
 		<span class="menu-trigger trigger" rel="nav-overlay" style="font-size: 20px; float: right" onclick="toggleMenuButton('menu-trigger')">MENU</span>
 		<div >
 			<nav class="w3ls-nav">
@@ -143,14 +160,6 @@
 	<!-------------------------------------------------- banner --------------------------------------------------------- -->
 	<div class="banner" >
 		<div class="banner-layer">
-			<!-- header -->
-			<!--<div class="header-agileits"> 
-				<div class="w3ls-logo">
-					<a href="index.html"><img id="logoCentro" src="images/logo.png" alt="logo"></a>
-				</div>  
-				<div class="clearfix"> </div>
-			</div> -->
-			<!-- //header -->
 			<!-- menu js-->
 			<script src="../js/jquery-3.1.1.slim.min.js"></script> 
 			<script>
@@ -184,7 +193,10 @@
 					<div class="flexslider">
 						<div class="banner-w3lstext">
 							<div class="logoDiv">
-								<a href="http://www.centroobra.com"><img id="logoCentro" src="../images/logo.png" alt="logo"></a>
+								<a href="http://www.centroobra.com"><img id="logoCentro" src="../images/logo.png" alt="logo">
+								<br>
+								<img src="../images/sloganfr.png" alt="slogan" width="55%" height="auto" style="margin-top: 50px">
+								</a>
 							</div>
 							<!--<h6>Monção</h6>
 							<p>Simplifique a sua vida </p>-->
@@ -240,76 +252,211 @@
 					<div id="owl-demo2" class="owl-carousel">
 						<div class="agile">
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>"Il me semble une idée audacieuse et assez viable! C'est quelque chose qui n'existe pas à Monção!"</p>
-									<h4>Filipe </h4>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal1">
+									<div class="test-grid1">
+										<p>"Il me semble une idée audacieuse et assez viable! C'est quelque chose qui n'existe pas à Monção!"</p>
+										<h4>Filipe </h4>
+									</div>
+								</a>	
 							</div>	
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>"J'avais besoin d'un Plombier et je ne savais pas qui je pouvais contacter, car que je n'en connais pas. Comme je savais que mon ami était sur le point d'ouvrir ce commerce, je l'ai appelée et elle a tout géré, je  ne me suis inquiéter pour rien!"</p>
-									<h4>Cátia</h4>
-									<span>Pereira</span>
-								</div>	
-							</div>	
-							<div class="clearfix"></div>
-						</div>
-						<div class="agile">
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>"C'est une excellente idée, il n'y a rien de tel ici à Monção!"</p>
-									<h4>Madalena</h4>
-									<span>Caldas</span>
-								</div>	
-							</div>	
-							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>"J'ai des travaux à faire à la maison, qui est une division de la maison qui a de l'humidité, peut-être même que le mur a besoin d’être traiter, je veux mettre du placô puis je vai peindre, mais la vérité est que j’attend toujours car je n’ai pas le temps de chercher qui me fasse le travail…Heureusement que vous êtes apparu, ça va me rendre service."</p>
-									<h4 style="margin-top: 0.5em">Armindo</h4>
-									<span>Lobato</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal2">
+									<div class="test-grid1">
+										<p>"J'avais besoin d'un Plombier et je ne savais pas qui je pouvais contacter, car que je n'en connais pas. Comme je savais que mon ami était sur le point d'ouvrir ce commerce, je l'ai appelée et elle a tout géré, je  ne me suis inquiéter pour rien!"</p>
+										<h4>Cátia</h4>
+										<span>Pereira</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="clearfix"></div>
 						</div>
 						<div class="agile">
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>"Je vis seul, mais depuis que je travaille toute la journée, je n'ai pas le temps de m'occuper du jardin et de la maison... J'arrive le week-end et je veux juste sortir avec des amis et me reposer. Pour les gens comme moi, cela peut être d'une grande aide!"</p>
-									<h4>André</h4>
-									<span>Fernandes</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal3">
+									<div class="test-grid1">
+										<p>"C'est une excellente idée, il n'y a rien de tel ici à Monção!"</p>
+										<h4>Madalena</h4>
+										<span>Caldas</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>"C'est une idée intéressante, je pense que vous réussirez! Si vous savez comment gérer les choses et rendre les clients heureux, vous avez des affaires sûres! L'idée a tout pour fonctionner."</p>
-									<h4>José</h4>
-									<span>Manuel</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal4">
+									<div class="test-grid1">
+										<p>"J'ai des travaux à faire à la maison, qui est une division de la maison qui a de l'humidité, peut-être même que le mur a besoin d’être traiter, je veux mettre du placô puis je vai peindre, mais la vérité est que j’attend toujours car je n’ai pas le temps de chercher qui me fasse le travail…Heureusement que vous êtes apparu, ça va me rendre service."</p>
+										<h4 style="margin-top: 0.5em">Armindo</h4>
+										<span>Lobato</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="clearfix"></div>
 						</div>
 						<div class="agile">
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>Question du client: "Par hasard, j'ai la porte de garage en panne, elle s'ouvre jusqu'à la moitié, mais elle s'arrête. Est-ce que vous réparez ça aussi? <br>
-									Réponse du Centro Obra: "Oui, nous le faisons, c'est à vous de me dire le meilleur moment et j’envoie quelqun dès que possible".</p>
-									<h4>Lurdes</h4>
-									<span>Pires</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal5">
+									<div class="test-grid1">
+										<p>"Je vis seul, mais depuis que je travaille toute la journée, je n'ai pas le temps de m'occuper du jardin et de la maison... J'arrive le week-end et je veux juste sortir avec des amis et me reposer. Pour les gens comme moi, cela peut être d'une grande aide!"</p>
+										<h4>André</h4>
+										<span>Fernandes</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="col-md-6 test-grid">
-								<div class="test-grid1">
-									<p>Question Client: "Je me suis déjà rendu compte que vous faîtes de la peinture mais faîtes vous aussi du papier peint?" <br>
-									Réponse du Centro Obra: "Oui, nous faisons ça aussi! Venez à notre entreprise, je vous montrerai plusieurs  possibilités de couleurs et types, je vous oriente et vous donne des avis. Vous allez voir que vous aller rester content!"</p>
-									<h4 style="margin-top: 0.5em">Carla</h4>
-									<span>Pereira</span>
-								</div>	
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal6">
+									<div class="test-grid1">
+										<p>"C'est une idée intéressante, je pense que vous réussirez! Si vous savez comment gérer les choses et rendre les clients heureux, vous avez des affaires sûres! L'idée a tout pour fonctionner."</p>
+										<h4>José</h4>
+										<span>Manuel</span>
+									</div>	
+								</a>
+							</div>	
+							<div class="clearfix"></div>
+						</div>
+						<div class="agile">
+							<div class="col-md-6 test-grid">
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal7">
+									<div class="test-grid1">
+										<p>Question du client: "Par hasard, j'ai la porte de garage en panne, elle s'ouvre jusqu'à la moitié, mais elle s'arrête. Est-ce que vous réparez ça aussi? <br>
+										Réponse du Centro Obra: "Oui, nous le faisons, c'est à vous de me dire le meilleur moment et j’envoie quelqun dès que possible".</p>
+										<h4>Lurdes</h4>
+										<span>Pires</span>
+									</div>
+								</a>	
+							</div>	
+							<div class="col-md-6 test-grid">
+								<a class="aModal" href="#" data-toggle="modal" data-target="#modal8">
+									<div class="test-grid1">
+										<p>Question Client: "Je me suis déjà rendu compte que vous faîtes de la peinture mais faîtes vous aussi du papier peint?" <br>
+										Réponse du Centro Obra: "Oui, nous faisons ça aussi! Venez à notre entreprise, je vous montrerai plusieurs  possibilités de couleurs et types, je vous oriente et vous donne des avis. Vous allez voir que vous aller rester content!"</p>
+										<h4 style="margin-top: 0.5em">Carla</h4>
+										<span>Pereira</span>
+									</div>	
+								</a>
 							</div>	
 							<div class="clearfix"></div>
 						</div>			
 					</div>
 				</div>	
 			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--------------------------------------------------- Modals ------------------------------------------------- -->
+<!-- modal1 -->
+<div class="modal about-modal w3-agileits fade" id="modal1" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>"Il me semble une idée audacieuse et assez viable! C'est quelque chose qui n'existe pas à Monção!"</p>
+				<h6>Filipe</h6>
+			</div> 
+		</div>
+	</div>
+</div> 
+<!-- modal2 -->
+<div class="modal about-modal w3-agileits fade" id="modal2" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>"J'avais besoin d'un Plombier et je ne savais pas qui je pouvais contacter, car que je n'en connais pas. Comme je savais que mon ami était sur le point d'ouvrir ce commerce, je l'ai appelée et elle a tout géré, je  ne me suis inquiéter pour rien!"</p>
+				<h6>Cátia Pereira</h6>
+			</div> 
+		</div>
+	</div>
+</div> 
+<!-- modal3 -->
+<div class="modal about-modal w3-agileits fade" id="modal3" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>"C'est une excellente idée, il n'y a rien de tel ici à Monção!"</p>
+				<h6>Madalena Caldas</h6>
+			</div> 
+		</div>
+	</div>
+</div> 
+<!-- modal4 -->
+<div class="modal about-modal w3-agileits fade" id="modal4" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>"J'ai des travaux à faire à la maison, qui est une division de la maison qui a de l'humidité, peut-être même que le mur a besoin d’être traiter, je veux mettre du placô puis je vai peindre, mais la vérité est que j’attend toujours car je n’ai pas le temps de chercher qui me fasse le travail…Heureusement que vous êtes apparu, ça va me rendre service."</p>
+				<h6>Armindo Lobato</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal5 -->
+<div class="modal about-modal w3-agileits fade" id="modal5" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>"Je vis seul, mais depuis que je travaille toute la journée, je n'ai pas le temps de m'occuper du jardin et de la maison... J'arrive le week-end et je veux juste sortir avec des amis et me reposer. Pour les gens comme moi, cela peut être d'une grande aide!"</p>
+				<h6>André Fernandes</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal6 -->
+<div class="modal about-modal w3-agileits fade" id="modal6" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>"C'est une idée intéressante, je pense que vous réussirez! Si vous savez comment gérer les choses et rendre les clients heureux, vous avez des affaires sûres! L'idée a tout pour fonctionner."</p>
+				<h6>José Manuel</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal7 -->
+<div class="modal about-modal w3-agileits fade" id="modal7" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>Question du client: "Par hasard, j'ai la porte de garage en panne, elle s'ouvre jusqu'à la moitié, mais elle s'arrête. Est-ce que vous réparez ça aussi?</p>
+				<br>
+				<p>Réponse du Centro Obra: "Oui, nous le faisons, c'est à vous de me dire le meilleur moment et j’envoie quelqun dès que possible".</p>
+				<h6>Lurdes Pires</h6>
+			</div> 
+		</div>
+	</div>
+</div>
+<!-- modal8 -->
+<div class="modal about-modal w3-agileits fade" id="modal8" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+			</div> 
+			<div class="modal-body">
+				<p>Question Client: "Je me suis déjà rendu compte que vous faîtes de la peinture mais faîtes vous aussi du papier peint?"</p>
+				<br>
+				<p>Réponse du Centro Obra: "Oui, nous faisons ça aussi! Venez à notre entreprise, je vous montrerai plusieurs  possibilités de couleurs et types, je vous oriente et vous donne des avis. Vous allez voir que vous aller rester content!"</p>
+				<h6>Carla Pereira</h6>
+			</div> 
 		</div>
 	</div>
 </div>
@@ -724,14 +871,18 @@
 				<!-- ROW 1 -------- -->
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4 col-xs-6 services-agile-grids">
-							<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-							<h4>Choisissez l'un de nos services</h4>
-						</div>
-						<div class="col-sm-4 col-xs-6 services-agile-grids services-grd-mdl1">
-							<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-							<h4>Demandez un devis gratuit</h4>
-						</div>
+						<a href="#services">
+							<div class="col-sm-4 col-xs-6 services-agile-grids">
+								<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+								<h4>Choisissez l'un de nos services</h4>
+							</div>
+						</a>
+						<a href="#contact">
+							<div class="col-sm-4 col-xs-6 services-agile-grids services-grd-mdl1">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+								<h4>Demandez un devis gratuit</h4>
+							</div>
+						</a>
 						<div class="col-sm-4 col-xs-6 services-agile-grids">
 							<span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
 							<h4>Recevez une réponse rapide et efficace!</h4>
@@ -911,6 +1062,20 @@
 	<script type="text/javascript" src="../js/jquery.fancybox-thumbs.js"></script>
 	<script type="text/javascript">
 		$(window).load(function(){
+
+			//Resize window
+			$(window).resize(function(){
+				if($(window).width() < 550){
+					$("#ligueFixo").html("<span class=\"fa fa-phone\" style=\"font-size:20px\"></span>");
+				}else{
+					$("#ligueFixo").html("<h2 style=\"font-family: 'Source Sans Pro', sans-serif;\">Appelez-nous!</h2>\
+											<br>\
+											<span class=\"fa fa-mobile\" style=\"display: inline-block; margin-right: 5px\"></span><p style=\"display: inline-block;\">  00351 <strong>967 315 101</strong></p>\
+											<br>\
+											<span class=\"fa fa-phone\" style=\"display: inline-block; margin-right: 5px; margin-left: -7px\"></span><p style=\"display: inline-block;\">00351 <strong>251 648 034</strong></p>");
+				}
+			});
+
 			//Click nos buttons do menu form
 
 			$(".buttonMenuForm").click(function() {
