@@ -1630,6 +1630,16 @@ h3.icon-subheading {
 }
 /*-- //modal --*/
 /*-- responsive-design --*/ 
+
+@media(min-width: 1640px){
+    #divCaixilharia, #divPichelaria{
+        max-height: 641px;
+    }
+    #caixilhariaImg, #imgPichelaria{
+        height: auto !important;
+        width: 100% !important;
+    }
+}
 @media(max-width: 1500px){
     #vidroImg{
         width: auto;
